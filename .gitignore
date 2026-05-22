@@ -1,2 +1,23 @@
+# Editor & OS
 .obsidian/
 .DS_Store
+
+# Environments (必须隔离巨大的虚拟环境)
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Data & Logs (必须隔离历史回测数据和运行日志)
+*.csv
+*.json
+*.log
+*.h5
+*.parquet
+data/
+logs/
+
+# Keys & Secrets (CRITICAL: 绝对禁止上传 API 密钥)
+.env
+config.yaml
+secret/
